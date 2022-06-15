@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33F5F1F1"
+    android:orientation="vertical">
+
+    <com.abc.code.wight.CustomTitleBar
+        android:id="@+id/customTv"
+        app:middleTitle="登录"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_bbs_posy"
+            android:gravity="center_vertical"
+            android:hint="请输入用户名"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingLeft="22dp"
+            android:paddingTop="2dp"
+            android:textColor="#222" />
+
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_bbs_posy"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:paddingLeft="22dp"
+            android:textColor="#222" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_bg_select"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btn_go_register"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_bg_select"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

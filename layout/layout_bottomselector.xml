@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="300dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/bg_dialog_picker"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height_middle">
+
+        <TextView
+            android:id="@+id/bottomselect_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_font_size_middle" />
+
+        <TextView
+            android:id="@+id/bottomselect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_font_size_middle" />
+
+        <TextView
+            android:id="@+id/bottomselect_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_font_size_middle"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/bottomselect_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/bottomselect_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"></ListView>
+
+</LinearLayout>

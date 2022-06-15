@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="用户姓名:什么饭"
+                android:textColor="@color/textcolorBackgrand"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/orderState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="2dp"
+                android:text="订单已发出"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/account"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="12dp"
+             android:layout_centerVertical="true"
+             android:gravity="center_vertical"
+             android:text="用户账号:12414213"
+             android:textColor="@color/textcolorBackgrand"
+             android:textSize="16dp" />
+
+         <TextView
+             android:visibility="gone"
+             android:id="@+id/eveluate"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_centerVertical="true"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="20dp"
+             android:background="@drawable/bt_bg_select"
+             android:gravity="center_vertical"
+             android:paddingStart="5dp"
+             android:paddingTop="2dp"
+             android:paddingEnd="8dp"
+             android:paddingBottom="2dp"
+             android:text="点击评价"
+             android:textColor="@color/white"
+             android:textSize="14dp" />
+     </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:text="维修设备:小米电视"
+            android:textColor="@color/textcolorBackgrand"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="维修地点:北京市朝阳区"
+            android:textColor="@color/textcolorBackgrand"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/llRepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/repairUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="维修人员账号:134924092"
+                    android:textColor="@color/textcolorBackgrand"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/repairEndTime"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="维修结束时间:2012-12-23 12:33"
+                    android:textColor="@color/textcolorBackgrand"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/repairReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="故障原因:就是看到你"
+                    android:textColor="@color/textcolorBackgrand"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/repairway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="维修方式:sad那么快撒"
+                    android:textColor="@color/textcolorBackgrand"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lookImageCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="2dp"
+                android:text="生成二维码"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/main_home_gray" />
+
+</LinearLayout>

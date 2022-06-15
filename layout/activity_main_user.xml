@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.abc.code.wight.CustomTitleBar
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:middleTextColor="@color/white"
+        app:middleTextSize="@dimen/dp_20"
+        app:rightTitle="登出"
+        app:middleTitle="首页" />
+
+
+    <LinearLayout
+        android:background="@mipmap/icon_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:id="@+id/getData"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_bg_select"
+            android:text="数据获取"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_bg_select"
+            android:text="硬件控制"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
