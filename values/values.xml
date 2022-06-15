@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RulerView">
+        <attr name="rulerHeight" format="dimension" />
+        <attr name="rulerToResultgap" format="dimension" />
+        <attr name="scaleGap" format="dimension" />
+        <attr name="scaleCount" format="integer" />
+        <attr name="firstScale" format="float" />
+        <attr name="maxScale" format="integer" />
+        <attr name="minScale" format="integer" />
+        <attr name="bgColor" format="color" />
+        <attr name="smallScaleColor" format="color" />
+        <attr name="midScaleColor" format="color" />
+        <attr name="largeScaleColor" format="color" />
+        <attr name="scaleNumColor" format="color" />
+        <attr name="resultNumColor" format="color" />
+        <attr name="unit" format="string" />
+        <attr name="unitColor" format="color" />
+        <attr name="smallScaleStroke" format="dimension" />
+        <attr name="midScaleStroke" format="dimension" />
+        <attr name="largeScaleStroke" format="dimension" />
+        <attr name="resultNumTextSize" format="dimension" />
+        <attr name="scaleNumTextSize" format="dimension" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="showScaleResult" format="boolean" />
+        <attr name="isBgRoundRect" format="boolean" />
+        <attr name="scaleLimit" format="integer" />
+    </declare-styleable>
+</resources>

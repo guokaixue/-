@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- 仪表盘自定义属性 -->
+    <attr name="color_dial_lower" format="color"/>
+    <attr name="color_dial_middle" format="color"/>
+    <attr name="color_dial_high" format="color"/>
+    <attr name="text_size_dial" format="dimension"/>
+    <attr name="stroke_width_dial" format="dimension"/>
+    <attr name="radius_circle_dial" format="dimension"/>
+    <attr name="text_title_dial" format="string"/>
+    <attr name="text_title_size" format="dimension"/>
+    <attr name="text_title_color" format="color"/>
+    <attr name="text_size_value" format="dimension"/>
+    <attr name="animator_play_time" format="integer"/>
+
+    <declare-styleable name="ClockView">
+        <attr name="color_dial_lower"/>
+        <attr name="color_dial_middle"/>
+        <attr name="color_dial_high"/>
+        <attr name="text_size_dial"/>
+        <attr name="stroke_width_dial"/>
+        <attr name="radius_circle_dial"/>
+        <attr name="text_title_dial"/>
+        <attr name="text_title_size"/>
+        <attr name="text_title_color"/>
+        <attr name="text_size_value"/>
+        <attr name="animator_play_time"/>
+    </declare-styleable>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomSheetEdit" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 自己想要的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+    </style>
+
+    <style name="PhotoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/actionBarTheme</item>
+        <!--设置图片选择界面标题栏以及底栏颜色-->
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <!--设置图片选择界面状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorBluePrimary</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_from_bottom</item>
+    </style>
+
+
+    <!-- 中间弹出框 -->
+    <style name="dialog_center" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景 -->
+        <!-- 窗口背景 @color/touming的值为：#00000000 ， style中不能直接引用16进制，感谢评论区的老铁提醒-->
+
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="BottomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogOne" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
